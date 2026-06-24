@@ -1,0 +1,18 @@
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "keymap_drawer.yaml"
+      - ".github/workflows/draw.yml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/lalapadgen2.keymap"
+      output_folder: "keymap-drawer"
+      draw_config: "keymap_drawer.yaml"
