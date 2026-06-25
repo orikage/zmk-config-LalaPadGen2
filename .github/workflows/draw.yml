@@ -15,4 +15,4 @@ jobs:
     with:
       keymap_patterns: "config/lalapadgen2.keymap"
       output_folder: "keymap-drawer"
-      draw_config: "keymap_drawer.yaml"
+      config_path: "keymap_drawer.yaml"
