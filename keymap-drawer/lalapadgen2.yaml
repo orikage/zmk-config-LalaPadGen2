@@ -40,8 +40,8 @@ layers:
   - BACKSPACE
   - ENTER
   - tertiary_layer
-  - かな
-  - 英数
+  - 半角/全角
+  - 半角/全角
   - BACKSLASH
   - ''
   - RIGHT

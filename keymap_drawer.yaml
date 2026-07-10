@@ -15,8 +15,7 @@ draw_config:
 
 parse_config:
   zmk_keycode_map:
-    INT1: "英数"
-    INT5: "かな"
+    LANG5: "半角/全角"
     LG(TAB): "⊞+Tab"
     LG(D): "⊞+D"
     LC(LG(LEFT)): "⊞←"
