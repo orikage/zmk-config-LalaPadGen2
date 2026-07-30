@@ -40,8 +40,8 @@ layers:
   - BACKSPACE
   - ENTER
   - tertiary_layer
-  - IME切替
-  - 英数*
+  - かな
+  - 英数
   - BACKSLASH
   - ''
   - RIGHT
