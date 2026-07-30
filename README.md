@@ -45,6 +45,18 @@ Microsoft公式ヘルプでは、英語(101/102)キーボード配列でMicrosof
 5. Microsoft IMEの設定を開き、「全般」→「キーとタッチのカスタマイズ」で、変換キーの動作を「IME−オン」、無変換キーの動作を「IME−オフ」に割り当てる（既に割り当て済みの場合は不要）
 6. メモ帳などを開き、`INT4`/`INT5` を割り当てたキーを押して、タスクバー表示が `A` ⇔ `あ` で切り替わることを確認する
 
+### 代替手段：PowerToys Keyboard Manager
+
+Windowsのバージョンやビルドによっては、上記5の「キーとタッチのカスタマイズ」に無変換／変換キーの割り当て項目が見当たらない場合があります。その場合は [Microsoft PowerToys](https://learn.microsoft.com/ja-jp/windows/powertoys/) の **Keyboard Manager** で代わりにリマップできます。
+
+1. PowerToysをインストールし、「Keyboard Manager」を有効にする
+2. 「キーの再マップ」で以下を追加する
+   - 無変換キー → `IME On`（システムショートカット）
+   - 変換キー → `IME Off`（システムショートカット）
+3. メモ帳などで動作を再確認する
+
+この方式でも、ZMK側は `&kp INT4` / `&kp INT5` をそのまま送信するだけで、IMEオン・オフの最終的な切り替えはWindows側（Microsoft IME設定またはPowerToys）に任せる構成になります。
+
 ## JIS配列キーボード（Realforceなど）を併用する場合の注意
 
 WindowsのハードウェアキーボードレイアウトはOS全体の設定であり、USB接続した複数のキーボードごとに完全に分離できない場合があります。そのため、JIS配列のキーボード（例: Realforce）とLaLaPad Gen2を同じPCで使い分ける場合は次の点に注意してください。
