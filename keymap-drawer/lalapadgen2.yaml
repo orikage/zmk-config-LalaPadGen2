@@ -70,31 +70,31 @@ layers:
   - ⊞+D
   - LCTRL
   secondary_layer:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
   - KP PLUS
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP MINUS
   - F6
   - F7
   - F8
   - F9
   - F10
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MINUS
+  - F11
+  - F12
+  - Ctl+Z
+  - Ctl+Y
+  - Ctl+S
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
@@ -146,29 +146,29 @@ layers:
   - PERCENT
   - PAGE UP
   - HOME
-  - UP ARROW
+  - PAGE DOWN
   - END
-  - PRINTSCREEN
+  - Ctl+TAB
   - CARET
   - AMPERSAND
   - ASTERISK
   - LEFT PARENTHESIS
   - RIGHT PARENTHESIS
-  - PAGE DOWN
   - LEFT
   - DOWN ARROW
+  - UP ARROW
   - RIGHT
-  - SCROLLLOCK
+  - Ctl+Sft+TAB
   - GRAVE
   - SQT
-  - SEMI
+  - COLON
   - LEFT BRACKET
   - RIGHT BRACKET
-  - {t: ▽, type: trans}
+  - Ctl+T
   - '&mkp MB4'
-  - {t: ▽, type: trans}
+  - Ctl+W
   - '&mkp MB5'
-  - PAUSE BREAK
+  - Ctl+F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,31 +208,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   system_layer:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - LEFT BRACE
+  - RIGHT BRACE
+  - PIPE
+  - TILDE
+  - UNDERSCORE
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - LESS THAN
+  - GREATER THAN
+  - PLUS
+  - EQUAL
+  - QUESTION
   - '&sys_reset'
   - '&bootloader'
   - BT CLR
   - BT CLR ALL
   - {t: ▽, type: trans}
-  - F11
-  - F12
   - F13
   - F14
   - F15
+  - SEMI
+  - {t: ▽, type: trans}
   - '&zip_dyn_scale ZDS_XY ZDS_INC'
   - '&zip_dyn_scale ZDS_XY ZDS_DEC'
   - '&zip_dyn_scale ZDS_SC ZDS_INC'
