@@ -139,19 +139,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   tertiary_layer:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - ^
+  - '?'
+  - ''''
+  - '{'
+  - '}'
   - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
   - KP +
-  - ^
-  - '&'
-  - '*'
+  - ':'
+  - $
+  - '|'
   - (
   - )
   - {t: ▽, type: trans}
@@ -159,9 +159,9 @@ layers:
   - KP 5
   - KP 6
   - KP -
-  - '`'
-  - ''''
-  - ':'
+  - '"'
+  - '~'
+  - _
   - '['
   - ']'
   - {t: ▽, type: trans}
@@ -208,21 +208,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   system_layer:
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - _
+  - '!'
+  - '@'
+  - '#'
+  - '%'
+  - '&'
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
+  - '*'
   - <
   - '>'
   - +
-  - '='
-  - '?'
+  - '`'
   - '&sys_reset'
   - '&bootloader'
   - BT CLR
