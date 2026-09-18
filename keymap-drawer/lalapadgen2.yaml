@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: MINUS, h: EQUAL}
+  - {t: MINUS, h: '='}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -70,48 +70,48 @@ layers:
   - ⊞+D
   - LCTRL
   secondary_layer:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - KP NUMLOCK
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP PLUS
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP MINUS
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - PAGE UP
+  - HOME
+  - PAGE DOWN
+  - END
+  - Ctl+TAB
   - F6
   - F7
   - F8
   - F9
   - F10
-  - {t: ▽, type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP ASTERISK
+  - LEFT
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT
+  - Ctl+Sft+TAB
+  - F11
+  - F12
+  - Ctl+Z
+  - Ctl+Y
+  - Ctl+S
+  - Ctl+T
+  - '&mkp MB4'
+  - Ctl+W
+  - '&mkp MB5'
+  - Ctl+F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP DOT
-  - KP DIVIDE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,48 +139,48 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   tertiary_layer:
-  - EXCLAMATION
-  - AT SIGN
-  - HASH
-  - DOLLAR
-  - PERCENT
-  - PAGE UP
-  - HOME
-  - UP ARROW
-  - END
-  - PRINTSCREEN
-  - CARET
-  - AMPERSAND
-  - ASTERISK
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
-  - PAGE DOWN
-  - LEFT
-  - DOWN ARROW
-  - RIGHT
-  - SCROLLLOCK
-  - GRAVE
-  - SQT
-  - SEMI
-  - LEFT BRACKET
-  - RIGHT BRACKET
+  - ^
+  - '?'
+  - ''''
+  - '{'
+  - '}'
+  - KP NUMLOCK
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP +
+  - ':'
+  - $
+  - '|'
+  - (
+  - )
   - {t: ▽, type: trans}
-  - '&mkp MB4'
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP -
+  - '"'
+  - '~'
+  - _
+  - '['
+  - ']'
   - {t: ▽, type: trans}
-  - '&mkp MB5'
-  - PAUSE BREAK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP *
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 0
+  - KP .
+  - KP /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,31 +208,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   system_layer:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - '!'
+  - '@'
+  - '#'
+  - '%'
+  - '&'
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - '*'
+  - <
+  - '>'
+  - +
+  - '`'
   - '&sys_reset'
   - '&bootloader'
   - BT CLR
   - BT CLR ALL
   - {t: ▽, type: trans}
-  - F11
-  - F12
   - F13
   - F14
   - F15
+  - ;
+  - {t: ▽, type: trans}
   - '&zip_dyn_scale ZDS_XY ZDS_INC'
   - '&zip_dyn_scale ZDS_XY ZDS_DEC'
   - '&zip_dyn_scale ZDS_SC ZDS_INC'
