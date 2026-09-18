@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: MINUS, h: EQUAL}
+  - {t: MINUS, h: '='}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -139,36 +139,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   tertiary_layer:
-  - EXCLAMATION
-  - AT SIGN
-  - HASH
-  - DOLLAR
-  - PERCENT
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - KP NUMLOCK
   - KP 7
   - KP 8
   - KP 9
-  - KP PLUS
-  - CARET
-  - AMPERSAND
-  - ASTERISK
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
+  - KP +
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
-  - KP MINUS
-  - GRAVE
-  - SQT
-  - COLON
-  - LEFT BRACKET
-  - RIGHT BRACKET
+  - KP -
+  - '`'
+  - ''''
+  - ':'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
   - KP 3
-  - KP ASTERISK
+  - KP *
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,8 +179,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - KP 0
-  - KP DOT
-  - KP DIVIDE
+  - KP .
+  - KP /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,21 +208,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   system_layer:
-  - LEFT BRACE
-  - RIGHT BRACE
-  - PIPE
-  - TILDE
-  - UNDERSCORE
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - _
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - LESS THAN
-  - GREATER THAN
-  - PLUS
-  - EQUAL
-  - QUESTION
+  - <
+  - '>'
+  - +
+  - '='
+  - '?'
   - '&sys_reset'
   - '&bootloader'
   - BT CLR
@@ -231,7 +231,7 @@ layers:
   - F13
   - F14
   - F15
-  - SEMI
+  - ;
   - {t: ▽, type: trans}
   - '&zip_dyn_scale ZDS_XY ZDS_INC'
   - '&zip_dyn_scale ZDS_XY ZDS_DEC'
