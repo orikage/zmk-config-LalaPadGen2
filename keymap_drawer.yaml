@@ -34,6 +34,7 @@ parse_config:
     RIGHT_PARENTHESIS: ")"
     GRAVE: "`"
     SQT: "'"
+    DOUBLE_QUOTES: '"'
     COLON: ":"
     SEMI: ";"
     LEFT_BRACKET: "["
