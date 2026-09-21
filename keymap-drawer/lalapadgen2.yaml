@@ -70,31 +70,31 @@ layers:
   - ⊞+D
   - LCTRL
   secondary_layer:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - '!'
+  - '@'
+  - '#'
+  - '['
+  - ']'
   - PAGE UP
   - HOME
-  - PAGE DOWN
-  - END
-  - Ctl+TAB
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - LEFT
-  - DOWN ARROW
   - UP ARROW
+  - END
+  - PRINTSCREEN
+  - '&'
+  - $
+  - '%'
+  - (
+  - )
+  - PAGE DOWN
+  - LEFT ARROW
+  - DOWN ARROW
   - RIGHT
   - Ctl+Sft+TAB
-  - F11
-  - F12
-  - Ctl+Z
-  - Ctl+Y
-  - Ctl+S
+  - '*'
+  - ^
+  - ''''
+  - <
+  - '>'
   - Ctl+T
   - '&mkp MB4'
   - Ctl+W
@@ -139,7 +139,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   tertiary_layer:
-  - ^
+  - '!'
   - '?'
   - ''''
   - '{'
@@ -207,6 +207,75 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Fource:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   system_layer:
   - '!'
   - '@'
@@ -241,12 +310,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -281,3 +350,5 @@ combos:
   k: ESCAPE
 - p: [10, 11]
   k: TAB
+- p: [1, 2]
+  k: LANG ZENKAKUHANKAKU
