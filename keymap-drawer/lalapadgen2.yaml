@@ -70,31 +70,31 @@ layers:
   - ⊞+D
   - LCTRL
   secondary_layer:
-  - '!'
-  - '@'
-  - '#'
-  - '['
-  - ']'
+  - CAPSLOCK
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INSERT
   - PAGE UP
   - HOME
   - UP ARROW
   - END
   - PRINTSCREEN
-  - '&'
-  - $
-  - '%'
-  - (
-  - )
+  - PLAY PAUSE
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SCROLLLOCK
   - PAGE DOWN
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT
   - Ctl+Sft+TAB
-  - '*'
-  - ^
-  - ''''
-  - <
-  - '>'
+  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DELETE
   - Ctl+T
   - '&mkp MB4'
   - Ctl+W
