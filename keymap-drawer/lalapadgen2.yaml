@@ -40,8 +40,8 @@ layers:
   - BACKSPACE
   - ENTER
   - tertiary_layer
-  - {t: かな, h: Fource}
-  - 英数
+  - {t: 英数, h: Fource}
+  - かな
   - BACKSLASH
   - ''
   - RIGHT
