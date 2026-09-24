@@ -83,13 +83,13 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp EXCLAMATION   &kp AT_SIGN        &kp HASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &kp PAGE_UP       &kp HOME           &kp UP_ARROW    &kp END    &kp PRINTSCREEN
-&kp AMPERSAND     &kp DOLLAR         &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PAGE_DOWN     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &kp LC(LS(TAB))
-&kp ASTERISK      &kp CARET          &kp SQT      &kp LESS_THAN         &kp GREATER_THAN                       &kp LC(T)         &mkp MB4           &kp LC(W)       &mkp MB5   &kp LC(F)
-&trans            &trans             &trans       &trans                &trans                 &trans  &trans  &trans            &trans             &trans          &trans     &trans
-                  &trans             &trans       &trans                &trans                 &trans  &trans  &trans            &trans             &trans          &trans
-&trans            &trans             &trans                                                                                                         &trans          &trans     &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans       &trans                &trans                                 &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans          &trans     &trans
+&kp CAPSLOCK      &kp K_MUTE         &trans  &trans  &kp INSERT                      &kp PAGE_UP       &kp HOME           &kp UP_ARROW    &kp END    &kp PRINTSCREEN
+&kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &trans  &trans  &kp SCROLLLOCK                  &kp PAGE_DOWN     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT  &kp LC(LS(TAB))
+&trans            &kp C_VOLUME_DOWN  &trans  &trans  &kp DELETE                      &kp LC(T)         &mkp MB4           &kp LC(W)       &mkp MB5   &kp LC(F)
+&trans            &trans             &trans  &trans  &trans          &trans  &trans  &trans            &trans             &trans          &trans     &trans
+                  &trans             &trans  &trans  &trans          &trans  &trans  &trans            &trans             &trans          &trans
+&trans            &trans             &trans                                                                               &trans          &trans     &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans  &trans  &trans                          &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans          &trans     &trans
             >;
         };
 
