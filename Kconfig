@@ -1,0 +1,9 @@
+config ZMK_INPUT_PROCESSOR_TYPING_GUARD
+    bool "Typing guard input processor"
+    default y
+    depends on DT_HAS_ZMK_INPUT_PROCESSOR_TYPING_GUARD_ENABLED
+    depends on ZMK_POINTING
+    depends on !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
+    help
+      Drop trackpad button events (tap-to-click) for a short time after a
+      keyboard key press, so accidental touches while typing don't click.

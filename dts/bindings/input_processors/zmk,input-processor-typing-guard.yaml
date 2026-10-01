@@ -1,0 +1,22 @@
+description: |
+  Input processor that drops matching input events for a while after the last
+  (non-modifier) key press. Used to ignore accidental trackpad taps while typing.
+
+compatible: "zmk,input-processor-typing-guard"
+
+include: ip_zero_param.yaml
+
+properties:
+  require-prior-idle-ms:
+    type: int
+    default: 400
+    description: Events are dropped while less than this many ms have passed since the last key press.
+  type:
+    type: int
+    default: 1 # INPUT_EV_KEY
+  codes:
+    type: array
+    required: true
+  ignore-modifiers:
+    type: boolean
+    description: Don't count modifier key presses (Ctrl+click etc. keeps working).
