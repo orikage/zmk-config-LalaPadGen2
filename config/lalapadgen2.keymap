@@ -63,16 +63,19 @@
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <DEFAULT_LAYER SECONDARY_LAYER TERTIARY_LAYER FOURTH_LAYER SYSTEM_LAYER>; /* クリスタモードでは無効 */
         };
 
         COMBO_TAB {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+            layers = <DEFAULT_LAYER SECONDARY_LAYER TERTIARY_LAYER FOURTH_LAYER SYSTEM_LAYER>; /* クリスタモードでは無効 */
         };
 
         hankakku_zenkaku {
             bindings = <&kp LANG_ZENKAKUHANKAKU>;
             key-positions = <1 2>;
+            layers = <DEFAULT_LAYER SECONDARY_LAYER TERTIARY_LAYER FOURTH_LAYER SYSTEM_LAYER>; /* クリスタモードでは無効 */
         };
 
         /* ---- クリスタ（CLIP STUDIO PAINT）用 左手同時押し ---- */
