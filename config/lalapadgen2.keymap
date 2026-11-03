@@ -13,16 +13,6 @@
 #define SYSTEM_LAYER    4
 #define CLIP_LAYER      5
 
-/* クリスタ用の同時押し: 通常の打鍵中(直前150ms以内にキー入力あり)は発動しない */
-#define CSP_COMBO(name, pos, binding) \
-    name { \
-        bindings = <binding>; \
-        key-positions = <pos>; \
-        layers = <DEFAULT_LAYER>; \
-        timeout-ms = <50>; \
-        require-prior-idle-ms = <150>; \
-    };
-
 &mt { quick-tap-ms = <200>; };
 
 &lt { quick-tap-ms = <200>; };
@@ -77,21 +67,6 @@
             key-positions = <1 2>;
             layers = <DEFAULT_LAYER SECONDARY_LAYER TERTIARY_LAYER FOURTH_LAYER SYSTEM_LAYER>; /* クリスタモードでは無効 */
         };
-
-        /* ---- クリスタ（CLIP STUDIO PAINT）用 左手同時押し ---- */
-        /* 縦2キー（同じ指で上下のキーの間を押す） */
-        CSP_COMBO(csp_fit,        0 10,  &kp LC(N0))         /* Q+A: 全体表示 */
-        CSP_COMBO(csp_zoom_out,  11 21,  &kp LC(KP_MINUS))   /* S+X: 縮小 */
-        CSP_COMBO(csp_zoom_in,   12 22,  &kp LC(KP_PLUS))    /* D+C: 拡大 */
-        CSP_COMBO(csp_pen,        3 13,  &kp P)              /* R+F: ペン/鉛筆 */
-        CSP_COMBO(csp_eyedrop,    4 14,  &kp I)              /* T+G: スポイト */
-        CSP_COMBO(csp_new_layer, 13 23,  &kp LC(LS(N)))      /* F+V: 新規ラスターレイヤー */
-        CSP_COMBO(csp_move_layer,14 24,  &kp K)              /* G+B: レイヤー移動 */
-        /* 下段の横2キー */
-        CSP_COMBO(csp_undo,      20 21,  &kp LC(Z))          /* Z+X: 取り消し */
-        CSP_COMBO(csp_redo,      21 22,  &kp LC(Y))          /* X+C: やり直し */
-        CSP_COMBO(csp_brush_dn,  22 23,  &kp LEFT_BRACKET)   /* C+V: ブラシサイズ小 */
-        CSP_COMBO(csp_brush_up,  23 24,  &kp RIGHT_BRACKET)  /* V+B: ブラシサイズ大 */
 
         /* 左親指 Win+Alt 同時押し: クリスタモード(CLIP_LAYER)のON/OFF */
         csp_mode_toggle {
