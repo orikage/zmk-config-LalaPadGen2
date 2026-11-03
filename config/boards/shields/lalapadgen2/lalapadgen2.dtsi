@@ -136,6 +136,17 @@
                     >;
     };
     
+    // タイピング直後の誤タップ（クリック）を無視する
+    // require-prior-idle-ms: 最後のキー押下からこの時間(ms)以内のタップは捨てる
+    typing_guard: typing_guard {
+        compatible = "zmk,input-processor-typing-guard";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_KEY>;
+        codes = <INPUT_BTN_0 INPUT_BTN_1 INPUT_BTN_2>;
+        require-prior-idle-ms = <400>;
+        ignore-modifiers;
+    };
+
     zip_dynamic_xy_scaler: zip_dynamic_xy_scaler {
         compatible = "zmk,input-processor-dynamic-scaler";
         #input-processor-cells = <0>;
@@ -158,14 +169,16 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split_R>;
-        input-processors = <&trackpad_key_behaviors_R>,
+        input-processors = <&typing_guard>,
+                           <&trackpad_key_behaviors_R>,
                            <&zip_xy_scaler 1 4>,
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             layers = <1>,<2>;
-            input-processors =  <&trackpad_key_behaviors_R>,
+            input-processors =  <&typing_guard>,
+                                <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
@@ -176,14 +189,16 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split_L>;
-        input-processors = <&trackpad_key_behaviors_L>,
+        input-processors = <&typing_guard>,
+                           <&trackpad_key_behaviors_L>,
                            <&zip_xy_scaler 1 4>,
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
             layers = <1>,<2>;
-            input-processors =  <&trackpad_key_behaviors_L>,
+            input-processors =  <&typing_guard>,
+                                <&trackpad_key_behaviors_L>,
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 40>,
                                 <&zip_dynamic_xy_scaler>,
