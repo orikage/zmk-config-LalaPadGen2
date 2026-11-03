@@ -345,10 +345,85 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  clip_studio:
+  - Ctl+KP -
+  - Ctl+KP +
+  - '['
+  - ']'
+  - Ctl+0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - I
+  - C
+  - E
+  - P
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - M
+  - X
+  - K
+  - G
+  - Ctl+Sft+N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LCTRL
+  - Ctl+Y
+  - LEFT ALT
+  - Ctl+Z
+  - SPACE
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+S
+  - Ctl+D
+  - Ctl+E
+  - Ctl+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ESCAPE
+  l: [Default, secondary_layer, tertiary_layer, Fource, system_layer]
 - p: [10, 11]
   k: TAB
+  l: [Default, secondary_layer, tertiary_layer, Fource, system_layer]
 - p: [1, 2]
   k: LANG ZENKAKUHANKAKU
+  l: [Default, secondary_layer, tertiary_layer, Fource, system_layer]
+- p: [31, 32]
+  k: {t: clip_studio, h: toggle}
+  l: [Default, clip_studio]
