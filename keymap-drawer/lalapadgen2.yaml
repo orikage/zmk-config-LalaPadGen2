@@ -370,7 +370,7 @@ layers:
   - X
   - K
   - G
-  - Ctl+Sft+N
+  - Meh+H
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -391,7 +391,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+S
   - Ctl+D
-  - Ctl+E
+  - DELETE
   - Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -425,5 +425,5 @@ combos:
   k: LANG ZENKAKUHANKAKU
   l: [Default, secondary_layer, tertiary_layer, Fource, system_layer]
 - p: [31, 32]
-  k: {t: clip_studio, h: toggle}
+  k: '&csp_toggle'
   l: [Default, clip_studio]

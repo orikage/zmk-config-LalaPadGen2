@@ -450,9 +450,7 @@ svg { background: #1a1a2e; }
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
-<a href="#clip_studio">
-<text x="112" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">clip_studio</tspan></text>
-</a><text x="112" y="207" class="combo hold">toggle</text>
+<text x="112" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;csp_toggle</tspan></text>
 </g>
 </g>
 </g>
@@ -1794,9 +1792,7 @@ svg { background: #1a1a2e; }
 </g>
 <g transform="translate(252, 140)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+Sft</tspan><tspan x="0" dy="1.2em">+N</tspan>
-</text>
+<text x="0" y="0" class="key tap">Meh+H</text>
 </g>
 <g transform="translate(420, 140)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1884,7 +1880,7 @@ svg { background: #1a1a2e; }
 </g>
 <g transform="translate(210, 266)" class="key keypos-45">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+E</text>
+<text x="0" y="0" class="key tap">DELETE</text>
 </g>
 <g transform="translate(238, 238)" class="key keypos-46">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
@@ -1976,9 +1972,7 @@ svg { background: #1a1a2e; }
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
-<a href="#clip_studio">
-<text x="112" y="196" class="combo tap layer-activator"><tspan style="font-size: 64%">clip_studio</tspan></text>
-</a><text x="112" y="207" class="combo hold">toggle</text>
+<text x="112" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;csp_toggle</tspan></text>
 </g>
 </g>
 </g>
