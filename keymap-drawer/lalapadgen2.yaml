@@ -348,8 +348,8 @@ layers:
   clip_studio:
   - Ctl+KP -
   - Ctl+KP +
-  - '['
   - ']'
+  - NON US HASH
   - Ctl+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
