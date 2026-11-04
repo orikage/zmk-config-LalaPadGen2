@@ -102,7 +102,7 @@ TourBox利用者が公開しているクリスタ用設定（[somejiro-lab](http
 
 - 割り当てはクリスタの初期ショートカット（Windows）に合わせています。`Ctrl+Z`/`Ctrl+Y`/`Ctrl+S`/`Ctrl+T`/`Ctrl+D`/`Delete`/`Ctrl+0`/`Ctrl+テンキー+`/`Ctrl+テンキー-` は[公式ユーザーガイドのメニューショートカット一覧（英語）](https://help.clip-studio.com/en-us/manual_en/780_shortcuts/Menu_Shortcuts.htm)で確認済みです
 - ツールの1文字ショートカット（`P` `E` `B` `I` `G` `M` `K`）は[公式のツールショートカット一覧](https://help.clip-studio.com/en-us/manual_en/780_shortcuts/Tool_Shortcuts.htm)、`X` `C` `[` `]` は[公式のオプションショートカット一覧](https://help.clip-studio.com/en-us/manual_en/780_shortcuts/Optional_Shortcuts.htm)で初期値であることを確認済みです
-- ブラシサイズの `[` / `]` は「ブラシサイズパレットのひとつ小さい／大きいプリセットを選ぶ」動作です。WindowsのハードウェアキーボードレイアウトがJIS配列だと別の文字（`@` / `[`）として届いてしまうため、US配列（101/102）設定が前提です
+- ブラシサイズの `[` / `]` は「ブラシサイズパレットのひとつ小さい／大きいプリセットを選ぶ」動作です。Windowsのハードウェアキーボードレイアウトが **JIS配列** の環境に合わせ、JISの `[` キー位置（`RIGHT_BRACKET`）と `]` キー位置（`NON_US_HASH`）を送っています。US配列のキーコード（`LEFT_BRACKET`/`RIGHT_BRACKET`）のままだと、JIS環境では `@` / `[` として届き、ブラシ小は無反応・ブラシ大は逆に小さくなっていました。WindowsをUS配列に切り替えた場合は `&kp LEFT_BRACKET` / `&kp RIGHT_BRACKET` に戻してください
 - それでも反応しないキーがある場合は、IMEがオフになっているか（タスクバーが `A` か）、クリスタの「ショートカットキー設定」でそのキーが別の機能に変更されていないかを確認してください
 - ズームは、キーボード配列（US/JIS）の影響を受けないようにテンキーの `+` / `-` を使っています
 - 左右反転などクリスタで初期ショートカットがない機能は割り当てていません。使いたい場合はクリスタ側でショートカットを割り当て、キーマップの好きな位置に追加してください
