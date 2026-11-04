@@ -350,7 +350,7 @@ layers:
   - Ctl+KP +
   - ']'
   - NON US HASH
-  - Ctl+0
+  - Meh+H
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -367,10 +367,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - M
-  - X
   - K
   - G
-  - Meh+H
+  - MINUS
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -404,8 +404,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MINUS
-  - '='
+  - ''
+  - ''
   - Alt+NON US HASH
   - Alt+]
   - {t: ▽, type: trans}
@@ -415,8 +415,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   clip_sub:
-  - Ctl+Alt+0
-  - Ctl+Sft+T
+  - Ctl+0
+  - X
   - Ctl+]
   - Ctl+NON US HASH
   - T
