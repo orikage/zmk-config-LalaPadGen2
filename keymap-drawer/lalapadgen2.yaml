@@ -348,9 +348,9 @@ layers:
   clip_studio:
   - Ctl+KP -
   - Ctl+KP +
-  - '['
   - ']'
-  - Ctl+0
+  - NON US HASH
+  - Meh+H
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -367,10 +367,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - M
-  - X
   - K
   - G
-  - Ctl+Sft+N
+  - MINUS
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -379,7 +379,7 @@ layers:
   - LCTRL
   - Ctl+Y
   - LEFT ALT
-  - Ctl+Z
+  - {t: Ctl+Z, h: clip_sub}
   - SPACE
   - LEFT SHIFT
   - {t: ▽, type: trans}
@@ -388,11 +388,80 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+[
   - Ctl+S
   - Ctl+D
-  - Ctl+E
+  - DELETE
   - Ctl+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - Alt+NON US HASH
+  - Alt+]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  clip_sub:
+  - Ctl+0
+  - X
+  - Ctl+]
+  - Ctl+NON US HASH
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+N
+  - Ctl+G
+  - Ctl+Alt+G
+  - Ctl+E
+  - W
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Sft+I
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -425,5 +494,5 @@ combos:
   k: LANG ZENKAKUHANKAKU
   l: [Default, secondary_layer, tertiary_layer, Fource, system_layer]
 - p: [31, 32]
-  k: {t: clip_studio, h: toggle}
+  k: '&csp_toggle'
   l: [Default, clip_studio]
