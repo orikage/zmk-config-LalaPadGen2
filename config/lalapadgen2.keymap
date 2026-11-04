@@ -39,6 +39,16 @@
             bindings = <&kp>, <&kp>;
         };
 
+        /* クリスタモード切替: IMEオフ(INT5=無変換)を送ってからレイヤーをトグル。
+           IMEオンのままだとクリスタの1文字ショートカット(P/E/[ など)が反応しないため */
+        csp_toggle: csp_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &kp INT5 &tog CLIP_LAYER>;
+        };
+
         tap_dance_layer_1and2: tap_dance_layer_1and2 {
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
@@ -68,9 +78,9 @@
             layers = <DEFAULT_LAYER SECONDARY_LAYER TERTIARY_LAYER FOURTH_LAYER SYSTEM_LAYER>; /* クリスタモードでは無効 */
         };
 
-        /* 左親指 Win+Alt 同時押し: クリスタモード(CLIP_LAYER)のON/OFF */
+        /* 左親指 Win+Alt 同時押し: クリスタモード(CLIP_LAYER)のON/OFF（同時にIMEオフ） */
         csp_mode_toggle {
-            bindings = <&tog CLIP_LAYER>;
+            bindings = <&csp_toggle>;
             key-positions = <31 32>;
             layers = <DEFAULT_LAYER CLIP_LAYER>;
             timeout-ms = <50>;
@@ -146,13 +156,14 @@
 
         CLIP_LAYER {
             display-name = "clip_studio";
-            /* よく使う操作ほど押しやすい位置（親指・ホーム段の人差し指/中指）に配置 */
+            /* よく使う操作ほど押しやすい位置（親指・ホーム段の人差し指/中指）に配置
+               左右反転(Ctrl+Shift+Alt+H)はクリスタ側でショートカット登録が必要 */
             bindings = <
 &kp LC(KP_MINUS)  &kp LC(KP_PLUS)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LC(N0)                              &trans  &trans  &trans  &trans  &trans
 &kp I             &kp C            &kp E             &kp P              &kp B                                   &trans  &trans  &trans  &trans  &trans
-&kp M             &kp X            &kp K             &kp G              &kp LC(LS(N))                           &trans  &trans  &trans  &trans  &trans
+&kp M             &kp X            &kp K             &kp G              &kp LC(LS(LA(H)))                       &trans  &trans  &trans  &trans  &trans
 &kp LCTRL         &kp LC(Y)        &kp LEFT_ALT      &kp LC(Z)          &kp SPACE          &kp LEFT_SHIFT  &trans   &trans  &trans  &trans  &trans  &trans
-                  &trans           &kp LC(S)         &kp LC(D)          &kp LC(E)          &kp LC(T)       &trans   &trans  &trans  &trans  &trans
+                  &trans           &kp LC(S)         &kp LC(D)          &kp DELETE         &kp LC(T)       &trans   &trans  &trans  &trans  &trans
 &trans            &trans           &trans                                                                                           &trans  &trans  &trans
 &trans            &trans           &trans            &trans             &trans                                  &trans  &trans  &trans  &trans  &trans
             >;
