@@ -173,15 +173,16 @@
                - 左右反転(Ctrl+Shift+Alt+H)はクリスタ側でショートカット登録が必要
                - JIS配列では RIGHT_BRACKET=「[」 NON_US_HASH=「]」 LEFT_BRACKET=「@」 EQUAL=「^」 になる
                - 取り消しの親指: タップ=取り消し / 長押し=サブレイヤー(CLIP_SUB_LAYER)
-               - 左トラックパッドの3本指スワイプ: 左右=キャンバス回転 / 上下=選択レイヤーを上下に切替 */
+               - キャンバス回転は下段右2つ（左回転 - / 右回転 ^）
+               - 左トラックパッドの3本指スワイプ: 上下=選択レイヤーを上下に切替（左右は誤操作防止で無効） */
             bindings = <
-&kp LC(KP_MINUS)  &kp LC(KP_PLUS)              &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LC(N0)                              &trans  &trans  &trans  &trans  &trans
+&kp LC(KP_MINUS)  &kp LC(KP_PLUS)              &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LC(LS(LA(H)))                       &trans  &trans  &trans  &trans  &trans
 &kp I             &kp C                        &kp E              &kp P            &kp B                                   &trans  &trans  &trans  &trans  &trans
-&kp M             &kp X                        &kp K              &kp G            &kp LC(LS(LA(H)))                       &trans  &trans  &trans  &trans  &trans
+&kp M             &kp K                        &kp G              &kp MINUS        &kp EQUAL                               &trans  &trans  &trans  &trans  &trans
 &kp LCTRL         &kp LC(Y)                    &kp LEFT_ALT       &csp_lt CLIP_SUB_LAYER LC(Z)  &kp SPACE          &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
                   &kp LC(LEFT_BRACKET)          &kp LC(S)          &kp LC(D)        &kp DELETE         &kp LC(T)       &trans  &trans  &trans  &trans  &trans
 &trans            &trans                       &trans                                                                                          &trans  &trans  &trans
-&kp MINUS         &kp EQUAL                    &kp LA(NON_US_HASH) &kp LA(RIGHT_BRACKET) &trans                        &trans  &trans  &trans  &trans  &trans
+&none             &none                        &kp LA(NON_US_HASH) &kp LA(RIGHT_BRACKET) &trans                        &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -190,7 +191,7 @@
             /* クリスタモードで取り消しの親指を押している間だけ有効。
                使用頻度は中〜低だが左手デバイスの設定例でよく入っている操作を集約 */
             bindings = <
-&kp LC(LA(N0))    &kp LC(LS(T))   &kp LC(RIGHT_BRACKET)  &kp LC(NON_US_HASH)  &kp T                          &trans  &trans  &trans  &trans  &trans
+&kp LC(N0)        &kp X           &kp LC(RIGHT_BRACKET)  &kp LC(NON_US_HASH)  &kp T                          &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(N))     &kp LC(G)       &kp LC(LA(G))          &kp LC(E)            &kp W                          &trans  &trans  &trans  &trans  &trans
 &kp LC(A)         &kp LC(X)       &kp LC(C)              &kp LC(V)            &kp LC(LS(I))                  &trans  &trans  &trans  &trans  &trans
 &trans            &trans          &trans                 &trans               &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
