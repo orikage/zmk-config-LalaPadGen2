@@ -377,9 +377,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
-  - {t: Ctl+Y, h: clip_sub}
+  - Ctl+Y
   - LEFT ALT
-  - Ctl+Z
+  - {t: Ctl+Z, h: clip_sub}
   - SPACE
   - LEFT SHIFT
   - {t: ▽, type: trans}
@@ -446,9 +446,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
