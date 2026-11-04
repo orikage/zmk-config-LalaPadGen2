@@ -50,7 +50,7 @@
             bindings = <&macro_tap &kp INT5 &tog CLIP_LAYER>;
         };
 
-        /* クリスタモードのサブレイヤー: 押し続けるとCLIP_SUB、タップでやり直し(Ctrl+Y)。
+        /* クリスタモードのサブレイヤー: 押し続けるとCLIP_SUB、タップで取り消し(Ctrl+Z)。
            親指を押したまま素早く次のキーを押しても切り替わるよう balanced にしている */
         csp_lt: csp_layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -172,13 +172,13 @@
                - よく使う操作ほど押しやすい位置（親指・ホーム段の人差し指/中指）に配置
                - 左右反転(Ctrl+Shift+Alt+H)はクリスタ側でショートカット登録が必要
                - JIS配列では RIGHT_BRACKET=「[」 NON_US_HASH=「]」 LEFT_BRACKET=「@」 EQUAL=「^」 になる
-               - Win位置の親指: タップ=やり直し / 長押し=サブレイヤー(CLIP_SUB_LAYER)
-               - 左トラックパッドのスワイプ: 左右=キャンバス回転 / 上下=選択レイヤーを上下に切替 */
+               - 取り消しの親指: タップ=取り消し / 長押し=サブレイヤー(CLIP_SUB_LAYER)
+               - 左トラックパッドの3本指スワイプ: 左右=キャンバス回転 / 上下=選択レイヤーを上下に切替 */
             bindings = <
 &kp LC(KP_MINUS)  &kp LC(KP_PLUS)              &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LC(N0)                              &trans  &trans  &trans  &trans  &trans
 &kp I             &kp C                        &kp E              &kp P            &kp B                                   &trans  &trans  &trans  &trans  &trans
 &kp M             &kp X                        &kp K              &kp G            &kp LC(LS(LA(H)))                       &trans  &trans  &trans  &trans  &trans
-&kp LCTRL         &csp_lt CLIP_SUB_LAYER LC(Y)  &kp LEFT_ALT       &kp LC(Z)        &kp SPACE          &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL         &kp LC(Y)                    &kp LEFT_ALT       &csp_lt CLIP_SUB_LAYER LC(Z)  &kp SPACE          &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans
                   &kp LC(LEFT_BRACKET)          &kp LC(S)          &kp LC(D)        &kp DELETE         &kp LC(T)       &trans  &trans  &trans  &trans  &trans
 &trans            &trans                       &trans                                                                                          &trans  &trans  &trans
 &kp MINUS         &kp EQUAL                    &kp LA(NON_US_HASH) &kp LA(RIGHT_BRACKET) &trans                        &trans  &trans  &trans  &trans  &trans
@@ -187,7 +187,7 @@
 
         CLIP_SUB_LAYER {
             display-name = "clip_sub";
-            /* クリスタモードでWin位置の親指を押している間だけ有効。
+            /* クリスタモードで取り消しの親指を押している間だけ有効。
                使用頻度は中〜低だが左手デバイスの設定例でよく入っている操作を集約 */
             bindings = <
 &kp LC(LA(N0))    &kp LC(LS(T))   &kp LC(RIGHT_BRACKET)  &kp LC(NON_US_HASH)  &kp T                          &trans  &trans  &trans  &trans  &trans
